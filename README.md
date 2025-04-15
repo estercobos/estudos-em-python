@@ -1,6 +1,6 @@
 # 🐍 P de Python e de “Pode Vir que Eu Aprendo!”
 
-Oiê! 🌼 Este repositório é o meu cantinho de estudos da linguagem Python!  
+Oiê! 🌼 Esse repositório é o meu cantinho de estudos da linguagem Python!  
 Se você também tá nessa jornada de aprender a programar sem fritar os neurônios (ou fritando só um pouquinho), seja bem-vindo(a)! ☕🧠💻
 
 ---
