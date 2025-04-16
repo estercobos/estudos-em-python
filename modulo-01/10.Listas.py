@@ -1,41 +1,53 @@
-# Criando uma lista de compras:
-lista_compras = ["pães", "hamburgueres", "bacon" "alface", "presunto", "queijo", "condimentos"]
+# Criando a lista de compras:
+lista_compras = ["pães", "hamburgueres", "bacon", "alface", "presunto", "queijo", "condimentos"]
 
 # Imprimindo a lista:
-print("Minha lista de compras: ")
+print("Minha lista de compras:")
 print(lista_compras)
 
-# Adicionando "refrigerante" à lista de compras:
+# Adicionando "refrigerante" no final:
 lista_compras.append("refrigerante")
 
-# Imprimindo a lista atualizada:
-print("\nLista de compras atualizada:")
-print(lista_compras)
+# Adicionando "maionese" na terceira posição:
+lista_compras.insert(2, "maionese")
 
-# Removendo o item "condimentos" da lista:
+# Verificando quantos itens tem na lista:
+print(f"\nTotal de itens na lista: {len(lista_compras)}")
+
+# Removendo o item "condimentos":
 lista_compras.remove("condimentos")
 
-# Imprimindo a lista após a remoção:
-print("\nLista de compras depois de remover condimentos:")
-print(lista_compras)
+# Removendo o último item da lista e mostrando ele:
+ultimo = lista_compras.pop()
+print(f"\nRemovi o último item da lista: {ultimo}")
 
-# Verificando se "queijo" está na lista:
+# Mostrando posição do item "queijo":
 if "queijo" in lista_compras:
-    print("\nO queijo está na lista.")
-else:
-    print("\nO queijo não está na lista.")
+    posicao = lista_compras.index("queijo")
+    print(f"\nO queijo está na posição {posicao}")
 
-# Imprimindo todos os itens da lista de compras:
-print("\nItens da lista de compras:")
+# Contando quantas vezes "pães" aparece:
+print(f"\n'Pães' aparece {lista_compras.count('pães')} vez(es) na lista")
+
+# Imprimindo todos os itens:
+print("\nItens atuais da lista:")
 for item in lista_compras:
     print("- " + item)
 
-# Imprimindo apenas os 3 primeiros itens da lista de compras:
-print("\nOs 3 primeiros itens da lista de compras:")
-print(lista_compras[:3])
+# Copiando a lista para não mexer na original:
+lista_backup = lista_compras.copy()
 
-# Ordenando a lista de compras em ordem alfabética:
-lista_compras.sort()
+# Ordenando uma cópia da lista:
+lista_ordenada = sorted(lista_compras)
+print("\nLista ordenada (sem alterar a original):")
+print(lista_ordenada)
 
-print("\nLista de compras ordenada:")
+# Invertendo a lista original:
+lista_compras.reverse()
+print("\nLista na ordem reversa:")
 print(lista_compras)
+
+# Limpando a cópia da lista (só pra mostrar o método):
+lista_backup.clear()
+print("\nBackup limpado:")
+print(lista_backup)
